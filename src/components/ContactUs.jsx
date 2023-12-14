@@ -25,13 +25,16 @@ const ContactUs = () => {
         alert('Please fill all the data');
         return;
       }
-      const response = await fetch('http://localhost:4000/submit-form', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        'https://qube-solution-backend-7wvi-om206.vercel.app/submit-form',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        }
+      );
       setFormData({
         name: '',
         email: '',
