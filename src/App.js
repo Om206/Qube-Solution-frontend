@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Navigation from './components/Navigation';
 import './style.scss';
+import './mediaquery.scss';
 import Footer from './components/Footer';
 import ContactUs from './components/ContactUs';
 function App() {

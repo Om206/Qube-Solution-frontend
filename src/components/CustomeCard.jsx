@@ -17,7 +17,7 @@ const CustomeCard = ({ image, title, dec }) => {
         padding={'1rem'}
         margin={'1rem'}
         width={'47%'}
-        height={'60vh'}
+        height={'100vh'}
         direction={{ base: 'column', sm: 'row' }}
         overflow="hidden"
         variant="outline"

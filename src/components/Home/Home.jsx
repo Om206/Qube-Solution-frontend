@@ -1,19 +1,20 @@
 import React from 'react';
 import image1 from '../../images/about.jpg';
-import CustomeCard from '../CustomeCard';
+import CustomeCard2 from '../CustomeCard2';
 
 //images
 
 import princeofParadise from '../../images/PrinceOfParadise.jpg';
 import ringOfFire from '../../images/ringOfFire.jpg';
 import vectGraphic from '../../images/vectGraphic.png';
+import { Box } from '@chakra-ui/react';
 const Home = () => {
   return (
     <>
-      <div className="home1" id="home">
+      <div className="home" id="home">
         <main>
           <h1>Qube</h1>
-          <p>Solution to all your lighting problems</p>
+          <p>Solution to all your lighting requirement</p>
         </main>
       </div>
 
@@ -64,41 +65,60 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="home5">
-        <div className="container">
-          <div className="image">
-            <img src={image1} alt="sad" />
-          </div>
-          <div className="imageName">
-            <h1>as asdasd</h1>
-            <p>sdfsdf</p>
-          </div>
-        </div>
-      </div> */}
-
-      <div className="home6" id="product">
-        <CustomeCard
+      <Box
+        id="product"
+        backgroundColor={'#090c31'}
+        display="flex"
+        paddingBottom={'4rem'}
+        justifyContent={'space-around'}
+        flexWrap={'wrap'}
+        // padding={'1rem'}
+        alignItems={'center'}
+      >
+        <CustomeCard2
           image={image1}
           title={'The Elegant'}
           dec={
             'This metal, ceiling pendant lamp is a subtle dominator and the boss of event every place it fits info'
           }
         />
-        <CustomeCard
+        <CustomeCard2
           image={princeofParadise}
           title={'Prince Of Paradise'}
           dec={
             'This mighty Prince,Ruler of all. Has to be the spotlight. Elegance, power and strength is just a little of what this Prince portrays. Sturdy, massive and a centre of attraction suitable for any placel.'
           }
         />
-        <CustomeCard
+
+        <CustomeCard2
           image={ringOfFire}
           title={'Ring of Fire'}
           dec={
             'This fancy, powerful ring that makes any place feel and look more superior thon ever! Strong yet subtle light that increases aesthetic and brings in control being the main centre of attraction.'
           }
         />
-      </div>
+        <CustomeCard2
+          image={ringOfFire}
+          title={'Ring of Fire'}
+          dec={
+            'This fancy, powerful ring that makes any place feel and look more superior thon ever! Strong yet subtle light that increases aesthetic and brings in control being the main centre of attraction.'
+          }
+        />
+        <CustomeCard2
+          image={ringOfFire}
+          title={'Ring of Fire'}
+          dec={
+            'This fancy, powerful ring that makes any place feel and look more superior thon ever! Strong yet subtle light that increases aesthetic and brings in control being the main centre of attraction.'
+          }
+        />
+        <CustomeCard2
+          image={ringOfFire}
+          title={'Ring of Fire'}
+          dec={
+            'This fancy, powerful ring that makes any place feel and look more superior thon ever! Strong yet subtle light that increases aesthetic and brings in control being the main centre of attraction.'
+          }
+        />
+      </Box>
     </>
   );
 };
